@@ -1,3 +1,5 @@
-program
+main.cpp
 all.h.gch
 
+program
+*.out
