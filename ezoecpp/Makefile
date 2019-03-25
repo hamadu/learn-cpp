@@ -1,10 +1,10 @@
 gcc_options = -std=c++17 -Wall --pedantic-error
 
 main.out : main.cpp all.h all.h.gch
-	g++-7 $(gcc_options) -include all.h $< -o $@
+	g++-8 $(gcc_options) -include all.h $< -o $@
 
 all.h.gch : all.h
-	g++-7 $(gcc_options) -x c++-header -o $@ all.h
+	g++-8 $(gcc_options) -x c++-header -o $@ all.h
 
 run : main.out
 	./main.out
